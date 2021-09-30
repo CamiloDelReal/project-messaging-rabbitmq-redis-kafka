@@ -1,0 +1,28 @@
+server:
+  port: 8380
+
+spring:
+  profiles:
+    active: kafka
+
+messaging:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    queue: "test_rabbitmq_queue"
+    exchange: "test_rabbitmq_exchange"
+    routing-key: "test_rabbitmq_routing_key"
+  redis:
+    host: localhost
+    port: 6379
+    username: ""
+    password: ""
+    topic: "test_redis_topic"
+  kafka:
+    host: localhost
+    port: 9092
+    reset-config: "earliest"
+    topic: "test_kafka_topic"
+    group: "test_kafka_group"
