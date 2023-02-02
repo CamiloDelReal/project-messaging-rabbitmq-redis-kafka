@@ -7,6 +7,7 @@ Microservices-based application to practice.
   * Redis
   * Kafka
 - Profile to select messaging channel (rabbitmq, redis, kafka)
+- Unit tests
 
 ### Technologies used
 - Spring Boot
